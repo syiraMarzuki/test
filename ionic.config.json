@@ -1,0 +1,7 @@
+{
+  "name": "eAduan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
