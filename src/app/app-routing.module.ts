@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'form',
+    loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
+  },
+  {
+    path: 'aduan-listing',
+    loadChildren: () => import('./aduan-listing/aduan-listing.module').then( m => m.AduanListingPageModule)
+  },
+  {
+    path: 'jsonform',
+    loadChildren: () => import('./jsonform/jsonform.module').then( m => m.JsonformPageModule)
+  },
 ];
 
 @NgModule({

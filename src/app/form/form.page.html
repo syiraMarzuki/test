@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Borang Aduan</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>  
+    <ion-card-content>
+      <img src="assets/spanlogo.png" alt="" height="auto" width="100%">
+      <ion-card>
+        <ion-card-content>
+
+          <ion-item>
+            <ion-label position="floating">Tajuk</ion-label>
+            <ion-input [(ngModel)]="data.tajuk"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Deskripsi</ion-label>
+            <ion-input [(ngModel)]="data.deskripsi"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Negeri</ion-label>
+            <ion-input [(ngModel)]="data.negeri"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Gps Latitude</ion-label>
+            <ion-input [(ngModel)]="data.latitude"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Gps Longitude</ion-label>
+            <ion-input [(ngModel)]="data.longitude"></ion-input>
+          </ion-item>
+
+          &nbsp;
+          <div class="text-center">
+            <ion-button (click)="hantarAduan()" color="success" expand="full">Hantar</ion-button>
+          </div>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-card-content>
+  </ion-card> 
+</ion-content>
